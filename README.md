@@ -34,7 +34,7 @@
 
 ---
 
-🧭 學習重點（What I Learned）
+## 🧭 學習重點（What I Learned）
 
 實作 前端演算法（Merge Sort）結合 DOM 更新。
 
