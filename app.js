@@ -51,6 +51,20 @@ allCredit.forEach((credit) => {
   });
 });
 
+// Mobile nav shortcut to result section
+const gradeAnalysisLink = document.getElementById("grade-analysis-link");
+if (gradeAnalysisLink) {
+  gradeAnalysisLink.addEventListener("click", (e) => {
+    if (window.innerWidth <= 786) {
+      e.preventDefault();
+      const resultSection = document.getElementById("result-gpa");
+      if (resultSection) {
+        resultSection.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+  });
+}
+
 //變換顏色的方法
 function changeColor(target) {
   if (target.value === "A" || target.value === "A-") {
